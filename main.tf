@@ -56,4 +56,5 @@ resource "aws_instance" "project01_instance" {
         Project = "Terraform Automation"
     }
     key_name        = "project01_key"
+    security_group_ids = [aws_security_group.project01_sg.id]
 }
