@@ -49,7 +49,7 @@ resource "aws_security_group" "project01_sg" {
 }
 
 resource "aws_instance" "project01_instance" {
-    ami             = "ami-09d3b3274b6c5d4aa"
+    ami             = "${var.aws_ubuntu_ami}"
     instance_type   = "t2.micro"
     tags            = {
         Name = "SimpliLearn Student James C",

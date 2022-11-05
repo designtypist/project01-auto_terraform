@@ -8,3 +8,6 @@ variable "aws_token" {}
 
 variable "aws_public_key" {}
 
+variable "aws_ubuntu_ami" {
+    default = "ami-08c40ec9ead489470"
+}
