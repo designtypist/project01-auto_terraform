@@ -52,7 +52,7 @@ resource "aws_instance" "project01_instance" {
     ami             = "${var.aws_ubuntu_ami}"
     instance_type   = "t2.micro"
     tags            = {
-        Name = "SimpliLearn Student James C",
+        Name = "Student James",
         Project = "Terraform Automation"
     }
     key_name        = "project01_key"
